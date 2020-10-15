@@ -1,0 +1,48 @@
+
+* {
+	font-family: Arial, Verdanan, sans-serif;
+	color: black;
+	background-color:lightblue;
+	border: 2px solid black;
+}
+
+/* overflow:hidden is added to the ul element to prevent li elements from going outside of the list*/
+ul {
+	list-style-type: none;
+	margin: 20px;
+	padding: 10px;
+	overflow: hidden;
+	background color: grey;
+} 
+
+li {
+	float: center;	
+}
+
+li a {
+	display: block;
+	color: green;
+	text-align: center;
+	padding: 20px 22 px;
+}
+
+li a:hover:not(.active){
+	background-color: blue;
+}
+
+.active{
+	background-color:white;
+}
+
+
+h1, h2 {
+	color: blue;
+	text-align: center;
+}
+
+h2, h3 {
+	color: black;
+	text-align: left;
+
+p {
+	color: green;}
