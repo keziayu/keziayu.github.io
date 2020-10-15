@@ -2,12 +2,12 @@
 * {
 	font-family: Arial, Verdanan, sans-serif;
 	color: black;
-	background-color:lightblue;
+	background-color:aliceblue;
 }
 
 /* overflow:hidden is added to the ul element to prevent li elements from going outside of the list*/
 ul {
-	list-style-type: in-line;
+	list-style-type: none;
 	margin: 20px;
 	padding: 10px;
 	overflow: hidden;
@@ -19,29 +19,27 @@ li {
 }
 
 li a {
-	display: block;
+	display: in-line;
 	color: green;
 	text-align: center;
 	padding: 20px 22 px;
 }
 
 li a:hover:not(.active){
-	background-color: grey;
+	background-color: blue;
 }
 
 .active{
-	background-color:white;
+	background-color: white;
 }
 
 
-h1, h2 {
-	color: grey;
+h1, h3 {
+	color: blue;
 	text-align: center;
 }
 
-h2, h3 {
+h4, h5 {
 	color: black;
 	text-align: left;
 
-p {
-	color: green;}
