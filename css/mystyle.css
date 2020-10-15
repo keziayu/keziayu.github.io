@@ -3,12 +3,11 @@
 	font-family: Arial, Verdanan, sans-serif;
 	color: black;
 	background-color:lightblue;
-	border: 2px solid black;
 }
 
 /* overflow:hidden is added to the ul element to prevent li elements from going outside of the list*/
 ul {
-	list-style-type: none;
+	list-style-type: in-line;
 	margin: 20px;
 	padding: 10px;
 	overflow: hidden;
@@ -27,7 +26,7 @@ li a {
 }
 
 li a:hover:not(.active){
-	background-color: blue;
+	background-color: grey;
 }
 
 .active{
@@ -36,7 +35,7 @@ li a:hover:not(.active){
 
 
 h1, h2 {
-	color: blue;
+	color: grey;
 	text-align: center;
 }
 
