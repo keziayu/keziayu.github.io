@@ -5,13 +5,20 @@
 	background-color: lightgray;
 }
 
-div {
+.wrapper{
+	width: 940px;
+	margin: 20px auto 20px auto;
+	background-color: lightgray;
+}
+
+header {
 	color: grey;
-	background-color: darkolivegreen;
+	background-color: palegoldenrod;
 	border-radius: 25px;
 	text-align: center;
 	padding-top: 10px;
 }
+
 /* source: https://stackoverflow.com/questions/16946284/how-to-horizontally-align-ul-to-center-of-div */
 .ulnavigation {
 	list-style-type: none;
@@ -49,14 +56,21 @@ li a.active{
 h1 {
 	color: darkslategray;
 	text-align: center;
-	background-color: darkolivegreen;
+	background-color: palegoldenrod;
 	font-stretch: expanded;
+}
+
+.imgmain {
+	display: block;
+	margin: 0px auto;
 }
 
 section {
 	border: 5px darkslategrey solid;
 	border-radius: 25px;
-	margin: 10px;
+	margin: 20px;
+	width: 550px;
+	float: left;
 }
 
 h4, h5 {
@@ -66,14 +80,27 @@ h4, h5 {
 }
 
 p {
-	text-align: center;
+	text-align: left;
 	color: rgb(30, 59, 12);
 }
 
-footer {
+aside {
+	width: 250px;
+	float: right;
 	border-radius: 25px;
-	border: 5px darkslategrey solid;
-	margin: 10px;
+	border: 3px darkslategrey solid;
+	margin: 20px;
 }
+
+aside a{
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+	color: darkgoldenrod;
+	float: center;
+}
+
+
+
 
 
