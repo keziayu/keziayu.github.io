@@ -1,51 +1,79 @@
 
 * {
-	font-family: Arial, Verdanan, sans-serif;
+	font-family: Arial, sans-serif;
 	color: black;
-	background-color:aliceblue;
+	background-color: lightgray;
 }
 
-
-.Header-nav-item {
-	display: flex;
+div {
+	color: grey;
+	background-color: darkolivegreen;
+	border-radius: 25px;
+	text-align: center;
+	padding-top: 10px;
 }
-
-ul {
+/* source: https://stackoverflow.com/questions/16946284/how-to-horizontally-align-ul-to-center-of-div */
+.ulnavigation {
 	list-style-type: none;
 	margin: 20px;
 	padding: 10px;
 	overflow: hidden;
-	background color: grey;
-} 
-
-li {
-	float: center;	
+	display: flex;
+	justify-content: center;	
 }
 
-li a {
-	display: in-line;
-	color: green;
-	text-align: center;
-	padding: 20px 22 px;
+.Header-nav-item{
+	margin: 10px;
 }
 
-li a:hover:not(.active){
-	background-color: antiquewhite;
+a{
+	color: lightyellow;
+	text-decoration: none;
 }
 
-.active{
+li{
+	margin: 10px;
+	padding: 5px;
+	color: darkolivegreen;
+	font-weight: bold;
+}
+
+a:hover {
+	background-color: grey;
+}
+
+li a.active{
 	background-color: white;
 }
 
-
-h1, h3 {
-	color: lightgrey;
+h1 {
+	color: darkslategray;
 	text-align: center;
+	background-color: darkolivegreen;
+	font-stretch: expanded;
+}
+
+section {
+	border: 5px darkslategrey solid;
+	border-radius: 25px;
+	margin: 10px;
 }
 
 h4, h5 {
-	color: black;
-	text-align: left;
+	color: darkslategrey;
+	text-align: center;
+	font-style: italic;
+}
+
+p {
+	text-align: center;
+	color: rgb(30, 59, 12);
+}
+
+footer {
+	border-radius: 25px;
+	border: 5px darkslategrey solid;
+	margin: 10px;
 }
 
 
