@@ -1,7 +1,7 @@
 
 * {
 	font-family: Arial, sans-serif;
-	color: black;
+	color: dimgray;
 	background-color: lightgray;
 }
 
@@ -36,22 +36,23 @@ header {
 a{
 	color: lightyellow;
 	text-decoration: none;
+	font-size: 12px;
 }
 
+/*Source: fuseneon.com*/
+a:hover {
+	cursor: pointer;
+	color: darkgrey;
+}
+
+
 li{
-	margin: 10px;
+	margin: 5px;
 	padding: 5px;
-	color: darkolivegreen;
+	color: darkseagreen;
 	font-weight: bold;
 }
 
-a:hover {
-	background-color: grey;
-}
-
-li a.active{
-	background-color: white;
-}
 
 h1 {
 	color: darkslategray;
@@ -66,7 +67,7 @@ h1 {
 }
 
 section {
-	border: 5px darkslategrey solid;
+	border: 5px palegoldenrod solid;
 	border-radius: 25px;
 	margin: 20px;
 	width: 550px;
@@ -74,33 +75,35 @@ section {
 }
 
 h4, h5 {
-	color: darkslategrey;
-	text-align: center;
-	font-style: italic;
+	color: dimgray;
+	text-align: left;
 }
 
 p {
-	text-align: left;
+	text-align: center;
 	color: rgb(30, 59, 12);
 }
 
 aside {
-	width: 250px;
+	width: 270px;
 	float: right;
 	border-radius: 25px;
-	border: 3px darkslategrey solid;
+	border: 3px palegoldenrod solid;
 	margin: 20px;
+	padding: 5px;
 }
 
 aside a{
 	display: block;
 	padding: 8px;
 	text-decoration: none;
-	color: darkgoldenrod;
+	color: cadetblue;
 	float: center;
 }
 
-
-
-
+.footer {
+	width: 940px;
+	float: center;
+	margin: 10px;
+}
 
