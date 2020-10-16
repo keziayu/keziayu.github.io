@@ -6,7 +6,7 @@
 }
 
 
-.nav {
+nav {
 	display: flex;
 }
 
@@ -30,7 +30,7 @@ li a {
 }
 
 li a:hover:not(.active){
-	background-color: blue;
+	background-color: antiquewhite;
 }
 
 .active{
@@ -39,7 +39,7 @@ li a:hover:not(.active){
 
 
 h1, h3 {
-	color: blue;
+	color: lightgrey;
 	text-align: center;
 }
 
