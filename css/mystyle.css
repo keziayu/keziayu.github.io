@@ -5,7 +5,11 @@
 	background-color:aliceblue;
 }
 
-/* overflow:hidden is added to the ul element to prevent li elements from going outside of the list*/
+
+.nav {
+	display: flex;
+}
+
 ul {
 	list-style-type: none;
 	margin: 20px;
@@ -42,4 +46,6 @@ h1, h3 {
 h4, h5 {
 	color: black;
 	text-align: left;
+}
+
 
