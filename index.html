@@ -1,14 +1,25 @@
-<!--homepage2-->
+<!--HomePage-->
+<!--Option A: Navigation bar, Option B: 5 or more unique images, Option C: 2 external links-->
 <!DOCTYPE html>
+<!--Set language to English-->
 <html lang="en">
+    <!--Adapted From: https://www.w3schools.com/html/html_head.asp-->
+    <!--Define the title in the browser toolbar-->
     <head>
         <title>Home</title>
         <link href="css/mystyle.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
+        <!--Adapted From: HTML and CSS design and build websites.pdf pg.452-->
+        <!--wrapper to hold the content of the page-->
         <div class="wrapper">
             <header>
+                <!--Adapted From: https://www.w3schools.com/tags/att_global_id.asp-->
+				<!--Set id attribute to link from bottom of the page back to top, where h1 is-->
                 <h1 id="top"> Mini Trip to Vancouver, BC</h1>
+                <!--Option A: Navigation bar-->
+                <!--Adapted From: https://www.fuseneon.com*-->
+                <!--unordered list of links to other pages-->
                 <nav>
                     <ul class="ulnavigation">
                         <li><a href="index.html" class="Header-nav-item">HOME</a></li>
@@ -18,60 +29,70 @@
                 </nav>
             </header>
 
-        <div>
-            <img src="images/Chief40.JPG" alt="Mountain View" width="940" height="493" class="imgmain">
-        </div>
+            <div>
+                <!--Insert image-->
+                <img src="./images/Chief40.JPG" alt="Mountain View" width="940" height="493">
+            </div>
 
-        <section class="content">
-            <ul>
-			    <li>Activities
-                    		    <ul>
-					    <li>Stawamus Chief Trail:<small>Located at Stawamus Chief Provincial Park and Protected Area. 
+            <!--Adapted From: https://www.w3schools.com/html/html_layout.asp-->
+            <!--Section of the page-->
+            <section class="content">
+                <p>ACTIVITIES</p>
+                    <!--Adapted From:https://www.w3schools.com/html/html_lists.asp-->
+                    <!--List of Activities-->
+                    <ul>
+					    <li>Stawamus Chief Trail:<small> Located at Stawamus Chief Provincial Park and Protected Area. 
 					    A hike with 3 peaks and 3 different views.
 					    Level: Intermediate-Difficult</small></li>
-					    <li>Dog Mountain Trail: <small>Located at Mount Seymour Provincial Park. Dog friendly, kid friendly, overall an easy, chill hike.</small></li>
+				        <li>Dog Mountain Trail: <small>Located at Mount Seymour Provincial Park. Dog friendly, kid friendly, overall an easy, chill hike.</small></li>
 					    <li>Driving Range at Seymour Creek Golf Centre: <small>Cheap fun date and golf club rentals available for lefties too!</small></li>
 					    <li>Sea to Sky Gondola:<small> On the pricier side, a $50 round trip gondola ride over Howe Sound. 
 					    Well worth it as there's a suspension bridge, more hiking trails,a restaurant and drinks!</small></li>
 					    <li>SUP at Jericho Beach: <small>Stand-Up Paddleboard in the English Bay surrounded by mountains. 
 					    Great sunset view and we even spotted two seals!</small></li>
-				    </ul>
-			    </li>
-			    <li>Sustenance
+                    </ul>
+                <p>SUSTENANCE</p>
+                <!--List of Restaurants-->
 				    <ul>
-					    <li>Steveston Pizza Co. <small>is well known among locals.
+				        <li>Steveston Pizza Co. <small>is well known among locals.
 					    Can never go wrong with pizza, but Stevenston Pizza is definietly the right way to go!</small></li>
-					    <li>Sunny Chibas Fried Chicken: <small>Restaurant along the Sea-to-Sky Highway.
+					    <li>Sunny Chibas Fried Chicken Mexican Cantina: <small>Restaurant along the Sea-to-Sky Highway.
 					    A scenic route to a delicious meal.</small></li>
 				    </ul>
-			    </li>
-            </ul>
-        </section>
+            </section>
 
-        <aside>
-                <h5>Check out these links to the activities</h5>
+            <!--Adapted From: https://www.w3schools.com/html/html_layout.asp-->
+            <!--Content aside from the main content-->
+            <aside>
+                <!--Option B: At least 2 external links(abosolute URL links)-->
+                <h5>Quick Links</h5>
+                <!--Adapted From: https://www.w3schools.com/html/html_links.asp-->
 		         <ul>
 			        <li><a href="https://www.stevestonpizza.com/">Steveston Pizza Co. Menu</a></li>
 			        <li><a href="https://ca.talech.com/biz/ordering/535365/Sunny-Chibas-SQUAMISH-BC#/menu">Sunny Chibas Fried Chicken Menu</a></li>
 		        </ul>
 
-                <h5>Click below to view a map of the activities listed above.</h5>
+                <h5>Locations</h5>
                 <ul>
-                    <li><a href="https://maps.googleapis.com/maps/api/staticmap?center=Vancouver%2CBritish%20Columbia&size=600x600
-                    &zoom=9&maptype=roadmap&markers=size%3Asmall%7Ccolor%3Ared%7C49.367578,-122.949108%7C49.6755,-123.1570%7C49.6867,-123.1350
-                    &markers=size%3Asmall%7Ccolor%3Aorange%7C49.307116,-123.0271837&key=AIzaSyDkNXlV6Rib05Pi-6McS2M8uChUQGBN9xo">
-                    Map of the Points of Interest</a></li>
-                    <li><a href="https://maps.googleapis.com/maps/api/staticmap?center=Stawamus%20Chief%20Trail%20Second%20Peak&size=600x640
-                    &zoom=15&maptype=terrain&key=AIzaSyDkNXlV6Rib05Pi-6McS2M8uChUQGBN9xo">Map of the Restaurants</a></li>
+                    <li><a href="https://maps.googleapis.com/maps/api/staticmap?center=Vancouver%2CBritish%20Columbia&size=600x600&zoom=9
+                        &maptype=roadmap&markers=size%3Asmall%7Ccolor%3Ared%7C49.367578,-122.949108%7C49.6755,-123.1570%7C49.6867,-123.1350
+                        &markers=size%3Asmall%7Ccolor%3Aorange%7C49.307116,-123.0271837&markers=size%3Asmall%7Ccolor%3Ablack%7C49.2724,-123.1944
+                        &key=AIzaSyDkNXlV6Rib05Pi-6McS2M8uChUQGBN9xo">Map of the Points of Interest</a></li>
+                    <li><a href="https://maps.googleapis.com/maps/api/staticmap?center=Vancouver%2CBritish%20Columbia&size=600x600&zoom=9&maptype=roadmap
+                        &markers=size%3Asmall%7Ccolor%3Ablue%7C49.125064,-123.1855449&markers=size%3Asmall%7Ccolor%3Ablue%7C49.6999834,-123.1470517
+                        &key=AIzaSyDkNXlV6Rib05Pi-6McS2M8uChUQGBN9xo">Map of Restaurants</a></li>
                 </ul>
-        </aside>
-        <section class="footer">
-            <!--Source: HTML and CSS design and build websites.pdf-->
-	        <p><a href="#top">Top</a></p>
-        </section>
+            </aside>
+
+            <section class="footer">
+                <!--Source: HTML and CSS design and build websites.pdf-->
+	            <h6><a href="#top">Top</a></h6>
+            </section>
+
         </div> <!--.wrapper-->
     </body>
 </html>
+
 
 
 
