@@ -122,6 +122,7 @@ p {
 .gallerydesign {
 	margin: 10px;
 	display: block;
+	width: 100%;
 }
 
 /*Adapted From: https://www.fuseneon.com*/
@@ -151,7 +152,6 @@ img {
 /*style figure*/
 figure {
 	display: block;
-	padding: 8px;
 	text-align: center;
 }
 
