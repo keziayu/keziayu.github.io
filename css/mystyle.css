@@ -121,9 +121,8 @@ p {
 /*Style the section that images are in*/
 .gallerydesign {
 	margin: 10px;
-	width: 100%;
-	padding: 10px;
-	display: inline-block;
+	width: 940px;
+	display: block;
 }
 
 /*Adapted From: https://www.fuseneon.com*/
