@@ -1,4 +1,3 @@
-/*CSS stylesheet*/
 /*Set default for the whole page*/
 * {
 	font-family: Arial, Verdana, sans-serif;
@@ -102,13 +101,11 @@ aside a{
 	display: block;
 	text-decoration: none; /*Remove the underline from link*/
 	color: cadetblue;
-	float: center;
 }
 
 /*Adapted From: https://www.w3schools.com/html/html_layout.asp*/
 .footer {
 	width: 940px;
-	float: center;
 	margin: 10px;
 }
 
