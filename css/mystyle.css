@@ -1,109 +1,167 @@
-
+/*CSS stylesheet*/
+/*Set default for the whole page*/
 * {
-	font-family: Arial, sans-serif;
+	font-family: Arial, Verdana, sans-serif;
 	color: dimgray;
 	background-color: lightgray;
 }
 
+/*Adapted From: HTML and CSS design and build websites.pdf pg.452*/
+/*To style the page to a width of 940px*/
 .wrapper{
 	width: 940px;
 	margin: 20px auto 20px auto;
 	background-color: lightgray;
 }
 
+/*Adapted From: HTML and CSS design and build websites.pdf pg.452*/
+/*To style the header section of my layout*/
 header {
 	color: grey;
 	background-color: palegoldenrod;
-	border-radius: 25px;
+	border-radius: 25px; /* curves the border*/
 	text-align: center;
 	padding-top: 10px;
 }
 
-/* source: https://stackoverflow.com/questions/16946284/how-to-horizontally-align-ul-to-center-of-div */
+/* Adapted From: https://stackoverflow.com/questions/16946284/how-to-horizontally-align-ul-to-center-of-div, https://www.w3schools.com/css/css_list.asp */
+/* To style navigation bar*/
 .ulnavigation {
-	list-style-type: none;
+	list-style-type: none; /* takes away the bullet points or any list style for the links*/
 	margin: 20px;
 	padding: 10px;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;	
+	display: flex;	/*aligns horizaontally the links in nav bar*/
+	justify-content: center; /* centers the links*/	
 }
 
-.Header-nav-item{
+/*Adapted From: https://www.fuseneon.com*/
+/*Space out the links*/
+.Header-nav-item {
 	margin: 10px;
 }
 
-a{
+/*Adapted From: https://www.w3schools.com/css/tryit.asp?filename=trycss_text-decoration_link*/
+a {
 	color: lightyellow;
-	text-decoration: none;
+	text-decoration: none; /*a link without underline*/
 	font-size: 12px;
 }
 
-/*Source: fuseneon.com*/
+/*Adapted From: https://www.fuseneon.com*/
 a:hover {
 	cursor: pointer;
 	color: darkgrey;
 }
 
-
-li{
+/* Adapted From: https://www.w3schools.com/css/css_list.asp*/
+/* Styling the list */
+ul li{
 	margin: 5px;
 	padding: 5px;
-	color: darkseagreen;
+	color: darkslategray;
 	font-weight: bold;
+	text-align: left;
 }
 
-
+/*Styling h1*/
 h1 {
 	color: darkslategray;
 	text-align: center;
 	background-color: palegoldenrod;
-	font-stretch: expanded;
 }
 
-.imgmain {
-	display: block;
-	margin: 0px auto;
+/*Styling h3-h6*/
+h3, h4, h5, h6 {
+	color: dimgray;
+	text-align: center;
 }
 
+/*Adapted From: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_float6*/
+/*Styling the sections*/
 section {
 	border: 5px palegoldenrod solid;
-	border-radius: 25px;
+	border-radius: 25px; /* round the border*/
 	margin: 20px;
 	width: 550px;
-	float: left;
+	float: left; /* For sections to be on left side of page*/
 }
 
-h4, h5 {
-	color: dimgray;
-	text-align: left;
-}
-
-p {
-	text-align: center;
-	color: rgb(30, 59, 12);
-}
-
+/*Adapted From: https://www.w3schools.com/html/html_layout.asp*/
+/*Styling aside*/
 aside {
 	width: 270px;
-	float: right;
-	border-radius: 25px;
+	float: right; /* Set aside to be on right sie of page*/
+	border-radius: 25px; /*round the border*/
 	border: 3px palegoldenrod solid;
 	margin: 20px;
 	padding: 5px;
 }
 
+/*Style the links inside aside. Adapted From:https://www.fuseneon.com */
 aside a{
 	display: block;
-	padding: 8px;
-	text-decoration: none;
+	text-decoration: none; /*Remove the underline from link*/
 	color: cadetblue;
 	float: center;
 }
 
+/*Adapted From: https://www.w3schools.com/html/html_layout.asp*/
 .footer {
 	width: 940px;
 	float: center;
 	margin: 10px;
+}
+
+/*Style paragraphs*/
+p {
+	text-align: center;
+	color: dimgray;
+	margin: 20px;
+	padding: 10px;
+}
+
+/*Adapted From: https://www.fuseneon.com*/
+/*Style the section that images are in*/
+.gallerydesign {
+	margin: 10px;
+	width: 100%;
+	padding: 10px;
+	display: inline-block;
+}
+
+/*Adapted From: https://www.fuseneon.com*/
+/*Style the paragraphs inside the gallery section*/
+.gallerydesign p{
+	font-style: italic;
+	background-color: aliceblue;
+	border-radius: 8px; /*round border*/
+}
+
+/*Style about me paragraph in the section class="aboutme" on About page*/
+.aboutme p{
+	text-align: left;
+}
+
+/*Adapted From: https://www.fuseneon.com */
+/*Style the images*/
+img {
+	border-radius: 8px; /*round border*/
+	margin: 5px;
+	display: block;
+	margin-left: auto; /*margin-left and margin-right set to auto to center the image*/
+	margin-right: auto;
+}
+
+/*Adapted From: HTML and CSS design and build websites.pdf pg. 430*/
+/*style figure*/
+figure {
+	display: block;
+	padding: 8px;
+	text-align: center;
+}
+
+/*Adapted From: HTML and CSS design and build websites.pdf pg. 430*/
+figure img {
+	border: 5px aliceblue solid; /*set border color for images*/
 }
 
