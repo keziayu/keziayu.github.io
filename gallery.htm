@@ -1,51 +1,64 @@
+<!--Option A: Navigation bar, Option B: 5 or more unique images, Option C: 2 external links-->
 <!DOCTYPE html>
-<html>
- <head>
-    <title>Gallery</title>
-    <link href="css/mystyle.css" type="text/css" rel="stylesheet"/>
- </head>
- <body>
-    <div>
-	    <h1 id="top">Gallery</h1>
-	    <nav>
-		    <ul class="ulnavigation">
-				<li><a href="index.html" class="Header-nav-item">Home</a></li>
-				<li><a href="gallery.htm" class="Header-nav-item">Gallery</a></li>
-				<li><a href="aboutme.htm" class="Header-nav-item">About Me</a></li>
-		    </ul>
-	    </nav>
-     </div>
-     <section>
-	<p>Day 1 of our trip. Here are some photos that we took along the Stawamus Chief Trail. This was a challenging hike for us with an elevation gain of 630 meters at Peak 3. 
-	It took us 4 and a half hours to complete and we were dying on our way up and crying on our way down!<p>
-	
-	<img src="images/Chief6.JPG" alt="Chief Trail" width="500" height="667">
-	<img src="images/Chief2.JPG" alt="Chief Trail View" width="600" height="800">
-	<img src="images/Chief3.JPG" alt="Chief Trail Peak 2" width="600" height="800">
-	<img src="images/Chief4.JPG" alt="Peak 2 View" width="600" height="450">
-     </section>
+<!--Set language to English-->
+<html lang="en">
+	<!--Adapted From: https://www.w3schools.com/html/html_head.asp-->
+   	<!--Define the title in the browser toolbar-->
+	<head>
+		<title>Gallery</title>
+		<link href="css/mystyle.css" type="text/css" rel="stylesheet"/>
+ 	</head>
+ 	<body>
+		<!--Adapted From: HTML and CSS design and build websites.pdf pg.452-->
+        <!--wrapper to hold the content of the page--> 
+		<div class="wrapper">
+			<header>
+				<!--Adapted From: https://www.w3schools.com/tags/att_global_id.asp-->
+				<!--Set id attribute to link from bottom of the page back to top, where h1 is-->
+				<h1 id="top">Gallery</h1>
+				<!--Option A: Navigation bar-->
+                <!--Adapted From: https://www.fuseneon.com-->
+                <!--unordered list of links to other pages-->
+				<nav>
+					<ul class="ulnavigation">
+						<li><a href="index.html" class="Header-nav-item">HOME</a></li>
+						<li><a href="gallery.htm" class="Header-nav-item">GALLERY</a></li>
+						<li><a href="aboutme.htm" class="Header-nav-item">ABOUT ME</a></li>		
+					</ul>
+				</nav>
+			</header>
+			<!--Option C: 5 or more unique images.-->
+			<!--Adapted From: https://www.w3schools.com/html/html_layout.asp, https://www.w3schools.com/html/html_images.asp-->
+			<!--Section of the page class="gallerydesign"-->
+			<!--Figure Adapted From: HTML and CSS design and build websites.pdf pg. 430-->
+			<section class="gallerydesign">
+				<p>Day 1 of our trip: Here are some photos that we took along the Stawamus Chief Trail. This was a challenging hike for us with an elevation gain of 630 meters at Peak 3. 
+					It took us 4 and a half hours to complete and we were dying on our way up and crying on our way down!</p>
+				<figure><img src="images/Chief6.JPG" alt="Chief Trail" width="500" height="667">
+				<img src="images/Chief2.JPG" alt="Chief Trail View" width="600" height="800">
+				<img src="images/Chief3.JPG" alt="Chief Trail Peak 2" width="600" height="800">
+				<img src="images/Chief4.JPG" alt="Peak 2 View" width="600" height="450">
+				<hr />
+				<p>Day 3 of our trip: Hike at Mount Seymour. Had to book a pass online due to covid restrictions. 
+					This was a fun hike for amateurs like us. It was a nice hour long hike on a gloomy yet peaceful day.</p>
+				<img src="images/Dogmountain1.JPG" alt="Dog Mountain Trees" width="600" height="800">
+				<img src="images/Dogmountain3.JPG" alt="Dog Mountain Peak view" width="600" height="800">
+				<img src="images/Dogmountain4.JPG" alt="Dog Mountain View with Bird" width="400" height="533">
+				<img src="images/DogMountain5.JPG" alt="Dog Mountain Tree Roots" width="600" height="800">
+				<img src="images/Dogmountain6.JPG" alt="Dog Mountain Pond" width="500" height="375">
+				<img src="images/Dogmountain7.JPG" alt="Dog Mountain Trailhead" width="400" height="553">
+				<hr />
+				<p>Day 4 at Seymour Creek Golf Centre: we self taught ourselves how to swing a golf club with a YouTube video. The view was pretty neat.</p>
+				<img src="images/SeymourGolf.JPG" alt="Golf Range" width="600" height="800"></figure>
+			</section>
 
-     <section>
-	<p>Day 3 of our trip. First hike at Mount Seymour. Had to book a pass online due to covid restrictions. 
-	This was a fun hike for amateurs like us. It was a nice hour long hike on a gloomy yet peaceful day.</p>
-	<img src="images/Dogmountain1.JPG" alt="Dog Mountain Trees" width="600" height="800">
-	<img src="images/Dogmountain3.JPG" alt="Dog Mountain Peak view" width="600" height="800">
-	<img src="images/Dogmountain4.JPG" alt="Dog Mountain View with Bird" width="400" height="533">
-	<img src="images/DogMountain5.JPG" alt="Dog Mountain Tree Roots" width="600" height="800">
-	<img src="images/Dogmountain6.JPG" alt="Dog Mountain Pond" width="500" height="375">
-	<img src="images/Dogmountain7.JPG" alt="Dog Mountain Trailhead" width="400" height="553">
-     
-     </section>
-	 
-     <section>
-	<p>Day 4 at Seymour Creek Golf Centre, we self taught ourselves how to swing a golf club with a YouTube video. The view was pretty neat.</p>
-	<img src="images/SeymourGolf.JPG" alt="Golf Range" width="600" height="800">
-     </section>
+			<section class="footer">
+				<!--Source: HTML and CSS design and build websites.pdf-->
+				<h6><a href="#top">Top</a></h6>
+			</section>
 
-	<!--Source: HTML and CSS design and build websites.pdf-->
-	<p><a href="#top">Top</a></p>
-  
- </body>
+		</div>
+ 	</body>
 </html>
 		  	
 
